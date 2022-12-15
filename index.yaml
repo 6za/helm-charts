@@ -9,6 +9,6 @@ entries:
     name: helm-k1-watcher-operator
     type: application
     urls:
-    - https://kubefirst.github.io/charts/helm-k1-watcher-operator-0.6.0.tgz
+    - https://6za.github.io/helm-charts/helm-k1-watcher-operator-0.6.0.tgz
     version: 0.6.0    
 generated: "2022-12-15T09:56:37.581168-05:00"
