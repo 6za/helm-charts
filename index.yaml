@@ -3,7 +3,17 @@ entries:
   helm-k1-watcher-operator:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-22T21:07:51.481839697Z"
+    created: "2022-12-22T21:19:46.839612658Z"
+    description: A Helm chart for Kubernetes
+    digest: d8acf513772154e0b2d69090df437758ca35c897b3b473de26ee0b62583f619a
+    name: helm-k1-watcher-operator
+    type: application
+    urls:
+    - https://6za.github.io/helm-charts/helm-k1-watcher-operator-0.13.0.tgz
+    version: 0.13.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-12-22T21:19:46.838024101Z"
     description: A Helm chart for Kubernetes
     digest: 06641e36c94ed8da0aa5a7c9f0c7d433a1d59c990b838fce8e386295a1c5888a
     name: helm-k1-watcher-operator
@@ -13,7 +23,7 @@ entries:
     version: 0.11.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-22T21:07:51.480089055Z"
+    created: "2022-12-22T21:19:46.836418437Z"
     description: A Helm chart for Kubernetes
     digest: 4b297a47596aedf31d24d7cc59f5faf19bd0b08a29e7491da8015f208d5de9f6
     name: helm-k1-watcher-operator
@@ -23,7 +33,7 @@ entries:
     version: 0.10.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-22T21:07:51.487401666Z"
+    created: "2022-12-22T21:19:46.845423356Z"
     description: A Helm chart for Kubernetes
     digest: 9da39c89ca465168eb56a181d499eea9494b39e203e60eb21abf66ce5a0a18c7
     name: helm-k1-watcher-operator
@@ -33,7 +43,7 @@ entries:
     version: 0.9.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-22T21:07:51.485819532Z"
+    created: "2022-12-22T21:19:46.84364927Z"
     description: A Helm chart for Kubernetes
     digest: 07a029b35ed1138515d5fc088ce2e246d82bb9275b765a378c27318b2cf53447
     name: helm-k1-watcher-operator
@@ -43,7 +53,7 @@ entries:
     version: 0.7.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-22T21:07:51.483936512Z"
+    created: "2022-12-22T21:19:46.841664655Z"
     description: A Helm chart for Kubernetes
     digest: 65b7a7d91c7b2049852af2dcb95e69b5b052d30d6fe92f7737003236c9d30a9a
     name: helm-k1-watcher-operator
@@ -51,4 +61,4 @@ entries:
     urls:
     - https://6za.github.io/helm-charts/helm-k1-watcher-operator-0.6.0.tgz
     version: 0.6.0
-generated: "2022-12-22T21:07:51.477736191Z"
+generated: "2022-12-22T21:19:46.834716781Z"
