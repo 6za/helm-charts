@@ -93,7 +93,14 @@ spec:
                       type: string
                     ready:
                       description: Custom logic of been ready
-                      type: boolean
+                      enum:
+                      - true
+                      - "True"
+                      - "TRUE"
+                      - false
+                      - "False"
+                      - "FALSE"
+                      type: string
                     replicas:
                       description: The number of running pods.
                       format: int32
@@ -231,7 +238,14 @@ spec:
                       type: string
                     ready:
                       description: Custom logic of been ready
-                      type: boolean
+                      enum:
+                      - true
+                      - "True"
+                      - "TRUE"
+                      - false
+                      - "False"
+                      - "FALSE"
+                      type: string
                     replicas:
                       description: The number of running pods.
                       format: int32
@@ -592,7 +606,7 @@ spec:
         env:
         - name: JOB_IMAGE
           value: 6zar/k1test:d36b82d
-        image: 6zar/k1-watcher-contoller:1e07f51
+        image: 6zar/k1-watcher-contoller:e16d687
         livenessProbe:
           httpGet:
             path: /healthz

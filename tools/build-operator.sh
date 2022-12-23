@@ -5,9 +5,15 @@ export K1_WATCHER_PATH=${BASE_PATH_GIT}/kubefirst/kubefirst-watcher/branches/mai
 export K1_OPERATOR_PATH=${BASE_PATH_GIT}/kubefirst/kubefirst-watcher-operator/branches/main
 export CHART_DIR=${BASE_PATH_GIT}/6za/helm-charts/branches/main
 export HERE=$PWD
-cd $K1_WATCHER_PATH && git_6za pull 
+cd /Users/kaxios/_DEV/__6zacode_llc/_github/kubefirst/kubefirst-watcher/branches
+rm -rf ${BASE_PATH_GIT}/kubefirst/kubefirst-watcher/branches/main
+git_6za clone -b main  git@github.com:kubefirst/kubefirst-watcher.git main
+cd $K1_WATCHER_PATH
 export K1_WATCHER_SHA=$(git rev-parse --short HEAD)
-cd $K1_OPERATOR_PATH && git_6za pull 
+cd /Users/kaxios/_DEV/__6zacode_llc/_github/kubefirst/kubefirst-watcher-operator/branches
+rm -rf ${BASE_PATH_GIT}/kubefirst/kubefirst-watcher-operator/branches/main
+git_6za clone -b main  git@github.com:kubefirst/kubefirst-watcher-operator.git main
+cd $K1_OPERATOR_PATH
 export K1_OPERATOR_SHA=$(git rev-parse --short HEAD)
 cd $CHART_DIR && git_6za pull 
 cd $HERE
@@ -25,7 +31,8 @@ docker run --rm -it \
                         make docker-build IMG=6zar/k1-watcher-contoller:latest &&\
                         make docker-push IMG=6zar/k1-watcher-contoller:latest &&\
                         make docker-build IMG=6zar/k1-watcher-contoller:${K1_OPERATOR_SHA} &&\
-                        make docker-push IMG=6zar/k1-watcher-contoller:${K1_OPERATOR_SHA}"
+                        make docker-push IMG=6zar/k1-watcher-contoller:${K1_OPERATOR_SHA} &&\
+                        chmod 777 -R ./bin/ && rm -rf bin"
 
 docker run --rm -it \
     -w /go/src \
