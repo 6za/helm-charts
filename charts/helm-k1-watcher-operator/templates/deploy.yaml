@@ -591,7 +591,7 @@ spec:
         - /manager
         env:
         - name: JOB_IMAGE
-          value: 6zar/k1test:3573fb1
+          value: 6zar/k1test:d36b82d
         image: 6zar/k1-watcher-contoller:1e07f51
         livenessProbe:
           httpGet:
