@@ -222,7 +222,7 @@ spec:
                   - namespace
                   type: object
                 type: array
-              statefulSets:
+              statefulsets:
                 items:
                   description: StatefulSetCondition deployment matching rules
                   properties:
@@ -605,8 +605,8 @@ spec:
         - /manager
         env:
         - name: JOB_IMAGE
-          value: 6zar/k1test:d36b82d
-        image: 6zar/k1-watcher-contoller:e16d687
+          value: 6zar/k1test:9a04e79
+        image: 6zar/k1-watcher-contoller:20e5419
         livenessProbe:
           httpGet:
             path: /healthz
