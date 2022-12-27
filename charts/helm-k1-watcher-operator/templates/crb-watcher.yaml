@@ -19,7 +19,7 @@ rules:
     resources: ["configmaps"]
     verbs: ["get"]
   - apiGroups: ["extensions"]
-    resources: ["deployments"]
+    resources: ["deployments","statefulsets"]
     verbs: ["get", "list", "watch"]
   - apiGroups: ["k1.kubefirst.io"]
     resources: ["watchers","watchers/status"]
